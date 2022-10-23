@@ -9,6 +9,10 @@ const seedDatabase = async () => {
       individualHooks: true,
       returning: true,
     });
+
+    const comments = await Comment.bulkCreate(commentData, {
+      returning: true,
+    });
   
     process.exit(0);
   };

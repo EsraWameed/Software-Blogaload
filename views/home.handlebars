@@ -23,4 +23,15 @@
       </p>
     </div>
   {{/each}}
+
+<!-- comments -->
+  <div>
+		<h2 class="text-center">Comments</h2>
+		{{#each comments as |blogComment|}}
+		<div >
+			<p class="text-center commentText">{{blogComment.new_comment}}</p>
+		</div>
+		{{/each}}
+  </div>
+
 </div>
