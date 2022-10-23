@@ -1,17 +1,31 @@
-<div class="dish-card">
-  <div class="dish-card-header">
-    {{blog_title}}
-    {{author_name}}
-  </div>
-  <div class="card-body">
-    <p>
-      {{blog_body}}
-      {{createdAt}}
-      {{new_comment}}
-    </p>
 
-  </div>
-<p>
-  
-</p>
-</div>
+				<h2 >{{blog_title}}</h2>
+        <h3 >{{author_name}}</h3>
+        <h4>Created by {{user.username}} on {{createdAt}}</h4>
+	
+		    <p >{{blog_body}}</p>
+	
+
+		{{#if logged_in}}
+		<form  data-blogid={{id}}>
+			<div >
+				<textarea
+				placeholder="add comment here..."
+				cols="35"
+				rows="2"></textarea>
+			</div>
+			<div>
+				<button type="submit">Add Comment</button>
+			</div>
+		</form>
+		{{/if}}
+
+		<h2>Comments</h2>
+		{{#each comments as |comment|}}
+		<div>
+			<p class="text-center commentText">{{comment.new_comment}}</p>
+			<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{createdAt}}<span>~</span></p>
+		</div>
+		{{/each}}
+
+		<script src="/js/comments.js"></script>
