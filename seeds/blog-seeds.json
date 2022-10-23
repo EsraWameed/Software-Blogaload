@@ -1,12 +1,14 @@
 [{
     "blog_title":"HTML",
     "author_name": "Esra Al-Abduljabar",
-    "blog_body": "HTML is a markup language used to provide the structure of a site or application"
+    "blog_body": "HTML is a markup language used to provide the structure of a site or application",
+    "createdAt": "2022-10-23T19:24:15.101Z"
 },
 
 {
     "blog_title":"CSS",
     "author_name": "Esra Al-Abduljabar",
-    "blog_body": "CSS is known as cascade styling sheet and is used to provide styling of a website"
+    "blog_body": "CSS is known as cascade styling sheet and is used to provide styling of a website",
+    "createdAt": "2022-10-23T19:24:15.101Z"
 }
 ]
