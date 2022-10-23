@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     // We use map() to iterate over blogData and then add .get({ plain: true }) each object to serialize it. 
     const blogs = blogData.map((blog) => blog.get({ plain: true }));
     // We render the template, 'all', passing in blogs, a new array of serialized objects.
-    res.render('all', { blogs });
+    res.render('home', { blogs });
     });
 
 // route to get one blog
