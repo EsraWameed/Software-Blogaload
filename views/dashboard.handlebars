@@ -1,0 +1,40 @@
+
+
+<h2><span>~</span>Hello, {{username}}!<span>~</span></h2>
+
+
+    <h3>Post New Blog:</h3>
+
+    <form>
+      <div>
+        <input  type="text" id="blog-title" name="blog-title" placeholder="Blog Title" />
+      </div>
+      
+      <div>
+        <textarea  id="blog-desc" name="blog-desc" placeholder="Blog Content"></textarea>
+      </div>
+      <div >
+        <button type="submit" >POST</button>
+      </div>
+    </form>
+  
+
+  {{#if blogs.length}}
+  
+    <h3>Current Blogs:</h3>
+
+    {{#each blogs as |blog|}}
+    <div>
+      <div>
+        <h4><a href="/blog/{{blog.id}}">{{blog.blog_title}}</a></h4>
+      </div>
+      <div>
+        <button data-id="{{blog.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+
+  {{/if}}
+
+
+<script src="/js/dashboard.js"></script>
