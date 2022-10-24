@@ -1,11 +1,10 @@
 
-
 <h2><span>~</span>Hello, {{username}}!<span>~</span></h2>
 
 
     <h3>Post New Blog:</h3>
 
-    <form>
+    <form class="new-blog-form">
       <div>
         <input  type="text" id="blog-title" name="blog-title" placeholder="Blog Title" />
       </div>
@@ -20,7 +19,7 @@
   
 
   {{#if blogs.length}}
-  
+    <div class="blog-list">
     <h3>Current Blogs:</h3>
 
     {{#each blogs as |blog|}}
@@ -33,7 +32,7 @@
       </div>
     </div>
     {{/each}}
-
+</div>
   {{/if}}
 
 
