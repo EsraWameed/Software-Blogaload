@@ -1,37 +1,19 @@
-<div class="menu-container">
-  <div class="card-header col-md-10">
-    <h2>
+{{#each blogs as |blog|}}
+      <div>
+        <h2>
+          <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+        </h2>
+      </div>
 
-    </h2>
-  </div>
-  <!-- For each blog in the array of blog objects, the following <div> will be rendered. -->
-  {{#each blogs as |blog|}}
-    <div class="dish col-md-5">
-      <!-- We use bl.id instead of <od> and <li> elements. -->
+      <div>
+        <p>Created by
+          {{blog.user.username}}
+          on
+          {{createdAt}}
+        </p>
+      </div>
+			
       <p>
-        {{blog.id}}
-        {{blog.blog_title}}.
-        {{blog.author_name}}
-        
-      </p>
-    </div>
-    <div class="col-md-7">
-      <p>
-        Blog Body
         {{blog.blog_body}}
-        {{blog.createdAt}}
       </p>
-    </div>
-  {{/each}}
-
-<!-- comments -->
-  <div>
-		<h2 class="text-center">Comments</h2>
-		{{#each comments as |blogComment|}}
-		<div >
-			<p class="text-center commentText">{{blogComment.new_comment}}</p>
-		</div>
-		{{/each}}
-  </div>
-
-</div>
+{{/each}}
