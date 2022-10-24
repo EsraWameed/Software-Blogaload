@@ -9,11 +9,11 @@
         <p>Created by
           {{blog.user.username}}
           on
-          {{createdAt}}
+          {{format_date blog.date_created}}
         </p>
       </div>
 			
       <p>
-        {{blog.blog_body}}
+        {{blog.description}}
       </p>
 {{/each}}

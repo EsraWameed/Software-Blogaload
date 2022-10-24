@@ -1,15 +1,15 @@
 
-				<h2 >{{blog_title}}</h2>
+				<h2 >{{title}}</h2>
         <h3 >{{author_name}}</h3>
-        <h4>Created by {{user.username}} on {{createdAt}}</h4>
+        <h4>Created by {{user.username}} on {{format_date date_created}}</h4>
 	
-		    <p >{{blog_body}}</p>
+		    <p >{{description}}</p>
 	
 
 		{{#if logged_in}}
-		<form  data-blogid={{id}}>
+		<form  class="new-comment-form" data-blogid={{id}}>
 			<div >
-				<textarea
+				<textarea id="comment_description"
 				placeholder="add comment here..."
 				cols="35"
 				rows="2"></textarea>
@@ -23,8 +23,8 @@
 		<h2>Comments</h2>
 		{{#each comments as |comment|}}
 		<div>
-			<p class="text-center commentText">{{comment.new_comment}}</p>
-			<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{createdAt}}<span>~</span></p>
+			<p class="text-center commentText">{{comment.comment_description}}</p>
+			<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{format_date date_created}}<span>~</span></p>
 		</div>
 		{{/each}}
 
