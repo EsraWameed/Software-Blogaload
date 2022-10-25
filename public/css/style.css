@@ -1,0 +1,41 @@
+.theHeader{
+    font-size: 28px;
+    color: rgb(250, 255, 115);
+    background-color: rgb(241, 16, 16);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.loginSignupPage{
+    background-color:rgb(250, 255, 115);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+justify-content: flex-start;
+}
+
+.userLogging{
+    margin-right: 60px;
+    background-color: rgb(241, 16, 16);
+    padding: 20px;
+    border-radius: 25%;
+}
+
+.userSigning{
+    background-color: rgb(241, 16, 16);
+    padding: 20px;
+    color: rgb(250, 255, 115);
+    border-radius: 25%;
+}
+
+.linkColoring{
+    color: rgb(250, 255, 115);
+    font-size: 17px;
+    font-weight: 400;
+}

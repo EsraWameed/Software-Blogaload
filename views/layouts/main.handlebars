@@ -8,12 +8,10 @@
   </head>
 
   <body>
-    <div>
 
-      <nav>
-          <a class="navbar-brand navTitle" href="/">The Software Blogaload</a>
-  
-          <div >
+      
+          <a class="theHeader" href="/">The Software Blogaload</a>
+          <div>
               {{#if logged_in}}
 
                 <li class="nav-item">
@@ -26,18 +24,20 @@
                 </li>
 
               {{else}}
-                <li>
-                  <a class="nav-link" href="/login">Login</a>
+
+              <div class="loginSignupPage">
+                <li class=" userLogging nav-item">
+                  <a class=" linkColoring nav-link" href="/login">Login</a>
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="/signUp">Sign Up</a>
+                <li class=" userSigning nav-item">
+                  <a class=" linkColoring nav-link" href="/signUp">Sign Up</a>
                 </li>
+             </div>
               {{/if}}
-            </ul>
-          </div>
-       
-      </nav>
+            
+    
+      
 
       <main class="container">
         {{{body}}}
