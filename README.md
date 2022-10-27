@@ -19,8 +19,8 @@ This application was created to allow users login, or signup to view blog posts,
 - Bcrypt: password hashing.
 - Dotenv: to secure sensitive information.
 
-![Login Page](public/assets/images/loginPage.png "Final Look")
-![Main Page](public/assets/images/mainPage.png "Final Look")
-![Specific Blog](public/assets/images/specificBlog.png "Final Look")
-![User Dashboard](public/assets/images/userDash.png "Final Look")
+![Login Page](public/images/loginPage.png "Final Look")
+![Main Page](public/images/mainPage.png "Final Look")
+![Specific Blog](public/images/specificBlog.png "Final Look")
+![User Dashboard](public/images/userDash.png "Final Look")
 
