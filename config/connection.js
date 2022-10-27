@@ -1,8 +1,9 @@
+//dev dependencies, sequelize for db, and dotenv for sensitive info protection
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
 let sequelize;
-
+//this statement establishes connection to jawsdb adon 
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
@@ -17,5 +18,5 @@ if (process.env.JAWSDB_URL) {
     }
   );
 }
-
+//exporting module
 module.exports = sequelize;

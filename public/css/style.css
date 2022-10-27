@@ -1,3 +1,9 @@
+/*element selector */
+body{
+    background-color: rgb(250, 255, 115);;
+}
+
+/*class selectors*/
 .theHeader{
     font-size: 28px;
     color: rgb(250, 255, 115);
@@ -6,25 +12,31 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    padding: 10px;
+    padding: 40px;
 }
 
 .loginSignupPage{
     background-color:rgb(250, 255, 115);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     list-style: none;
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 40px;
-justify-content: flex-start;
+    
+
 }
 
 .userLogging{
-    margin-right: 60px;
+    
     background-color: rgb(241, 16, 16);
     padding: 20px;
     border-radius: 25%;
+    width: 110px;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .userSigning{
@@ -32,10 +44,83 @@ justify-content: flex-start;
     padding: 20px;
     color: rgb(250, 255, 115);
     border-radius: 25%;
+    width: 110px;
+    align-self: center;
 }
 
 .linkColoring{
     color: rgb(250, 255, 115);
     font-size: 17px;
     font-weight: 400;
+}
+
+.textAreahere{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(215, 222, 222);
+    margin-bottom: 10px;
+    
+}
+
+.addCommentBu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(241, 16, 16);
+    color: rgb(250, 255, 115);
+    border-radius: 25%;
+    width: 110px;
+    align-self: center;
+}
+
+.no-button{
+    background-color: rgb(241, 16, 16);
+    padding: 10px;
+    border-radius: 25%;
+    width: 95px;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogTitles{
+   background-color: rgb(173, 173, 174);
+   color: white;
+   padding: 10px;
+   border-bottom: 2px solid black;
+   color: black;
+}
+
+.clicktoLog{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 2px;
+    width: 80px;
+}
+.signUpinstead{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 2px;
+    width: 80px;
+}
+
+.fixLoginInstead{
+    margin-top: -12px;
+   margin-right: 97px;
+}
+
+.dashBoardDec{
+    list-style: none;
+    
 }

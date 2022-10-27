@@ -13,7 +13,7 @@
         <textarea  id="blog-desc" name="blog-desc" placeholder="Blog Content"></textarea>
       </div>
       <div >
-        <button type="submit" >POST</button>
+        <button class="signUpinstead" type="submit" >POST</button>
       </div>
     </form>
   
@@ -25,10 +25,10 @@
     {{#each blogs as |blog|}}
     <div>
       <div>
-        <h4><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
+        <h4 class="blogTitles" ><a href="/blog/{{blog.id}}">{{blog.title}}</a></h4>
       </div>
       <div>
-        <button data-id="{{blog.id}}">DELETE</button>
+        <button class="signUpinstead" data-id="{{blog.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}

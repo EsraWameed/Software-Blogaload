@@ -9,13 +9,13 @@
 		{{#if logged_in}}
 		<form  class="new-comment-form" data-blogid={{id}}>
 			<div >
-				<textarea id="comment_description"
+				<textarea class ="textAreahere" id="comment_description"
 				placeholder="add comment here..."
-				cols="35"
-				rows="2"></textarea>
+				cols="100"
+				rows="6"></textarea>
 			</div>
 			<div>
-				<button type="submit">Add Comment</button>
+				<button class="addCommentBu" type="submit">Add Comment</button>
 			</div>
 		</form>
 		{{/if}}
@@ -24,7 +24,7 @@
 		{{#each comments as |comment|}}
 		<div>
 			<p class="text-center commentText">{{comment.comment_description}}</p>
-			<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{format_date date_created}}<span>~</span></p>
+			<p class="text-center commentOwner"><span>~</span>Created by {{comment.user.username}} on {{format_date date_created}}</p>
 		</div>
 		{{/each}}
 
